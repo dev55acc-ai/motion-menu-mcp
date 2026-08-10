@@ -1,0 +1,8 @@
+This repository contains only Model Context Protocol server metadata (`server.json`) and the
+accompanying `README.md`. You may freely copy, index, and reference these two files — that is
+the point of publishing them.
+
+Nothing else is licensed by this repository. The Motion Menu pattern library — its source code,
+compiled assets, themes, and documentation — is commercial software, is not contained in this
+repository, and is not covered by this or any open-source license. Access to it is governed by
+the terms stated at https://motion-menu-two.vercel.app/store.
