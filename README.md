@@ -75,17 +75,18 @@ nothing regardless of pattern count.
 
 ## Install as a Claude Code plugin
 
-This repo is also a Claude Code plugin marketplace — it points at the same hosted MCP endpoint
-above, no local server, nothing to build.
+The canonical Claude Code plugin lives at
+[dev55acc-ai/motion-menu-plugin](https://github.com/dev55acc-ai/motion-menu-plugin) —
+it registers the same hosted endpoint, supports an optional `MOTION_MENU_KEY` for the paid
+tier, and ships a skill teaching the composition workflow:
 
 ```
-/plugin marketplace add dev55acc-ai/motion-menu-mcp
-/plugin install motion-menu@motion-menu
+/plugin marketplace add dev55acc-ai/motion-menu-plugin
+/plugin install motion-menu-patterns@motion-menu
 ```
 
-That registers the `motion-menu` MCP server (`.mcp.json` at repo root, streamable-http, no key
-needed to initialize / list tools / call the free ones) as a Claude Code plugin. See
-`.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json` for the manifest.
+(This repo briefly carried its own plugin manifest; it was removed in favour of the one above —
+one canonical install path, no drift.)
 
 ## Links
 
