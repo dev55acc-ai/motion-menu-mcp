@@ -73,6 +73,20 @@ design laws plus the full index in a single response.
 `list_patterns`, `list_themes`, `get_kit`, `recommend_patterns`, and `validate_combination` cost
 nothing regardless of pattern count.
 
+## Install as a Claude Code plugin
+
+This repo is also a Claude Code plugin marketplace — it points at the same hosted MCP endpoint
+above, no local server, nothing to build.
+
+```
+/plugin marketplace add dev55acc-ai/motion-menu-mcp
+/plugin install motion-menu@motion-menu
+```
+
+That registers the `motion-menu` MCP server (`.mcp.json` at repo root, streamable-http, no key
+needed to initialize / list tools / call the free ones) as a Claude Code plugin. See
+`.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json` for the manifest.
+
 ## Links
 
 - [/store](https://motion-menu-two.vercel.app/store) — get a key, pricing, integration snippets

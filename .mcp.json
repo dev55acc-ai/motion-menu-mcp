@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "motion-menu": {
+      "type": "http",
+      "url": "https://motion-menu-two.vercel.app/api/mcp"
+    }
+  }
+}
