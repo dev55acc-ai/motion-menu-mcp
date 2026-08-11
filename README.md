@@ -1,24 +1,12 @@
-# Motion Menu — MCP server metadata
-
-This repository holds only the public metadata for the Motion Menu MCP server
-(`server.json`, registry id `io.github.dev55acc-ai/motion-menu`) plus this README. It exists
-so directories that require a **public** GitHub repository URL to review a listing — mcp.pub,
-Glama, mcp.directory — have somewhere to point.
-
-**The pattern library itself is not in this repository.** See [LICENSE](./LICENSE).
-
-## What Motion Menu is
+# Motion Menu — MCP server
 
 596 motion/3D UI patterns — scroll-driven WebGL, shader passes, spring choreography — as
 transplantable HTML/CSS/JS an agent reads directly and drops into a page. Filed into 26
 collections by page role. Served over MCP, plain HTTP, and a shadcn registry.
 
-- **Free tier**: 26 patterns, no card, no expiry.
-- **Lifetime**: $149 once — all 596 patterns, all themes, compose, publish, yours forever. No
-  subscriptions, no seats, no renewal.
-
-(Both figures as stated live on [/store](https://motion-menu-two.vercel.app/store) and
-[/connect](https://motion-menu-two.vercel.app/connect).)
+- **Free**: 26 patterns, no card, no expiry.
+- **Lifetime**: $149 once — all 596 patterns, all themes, compose, publish, yours forever.
+  No subscriptions, no seats, no renewal.
 
 ## MCP endpoint
 
@@ -51,6 +39,8 @@ Cursor / Windsurf (`mcp.json`):
 }
 ```
 
+Cline: see [llms-install.md](./llms-install.md).
+
 Plain HTTP, no MCP client needed:
 
 ```
@@ -64,6 +54,13 @@ shadcn registry:
 npx shadcn@latest add "https://motion-menu-two.vercel.app/r/<slug>.json?framework=react"
 ```
 
+Claude Code plugin (optional — same endpoint, plus a skill teaching the workflow):
+
+```
+/plugin marketplace add dev55acc-ai/motion-menu-plugin
+/plugin install motion-menu-patterns@motion-menu
+```
+
 ## Workflow
 
 `initialize` (read the instructions) → `get_design_digest` → `recommend_patterns` →
@@ -73,30 +70,15 @@ design laws plus the full index in a single response.
 `list_patterns`, `list_themes`, `get_kit`, `recommend_patterns`, and `validate_combination` cost
 nothing regardless of pattern count.
 
-## Install as a Claude Code plugin
-
-The canonical Claude Code plugin lives at
-[dev55acc-ai/motion-menu-plugin](https://github.com/dev55acc-ai/motion-menu-plugin) —
-it registers the same hosted endpoint, supports an optional `MOTION_MENU_KEY` for the paid
-tier, and ships a skill teaching the composition workflow:
-
-```
-/plugin marketplace add dev55acc-ai/motion-menu-plugin
-/plugin install motion-menu-patterns@motion-menu
-```
-
-(This repo briefly carried its own plugin manifest; it was removed in favour of the one above —
-one canonical install path, no drift.)
-
 ## Links
 
 - [/store](https://motion-menu-two.vercel.app/store) — get a key, pricing, integration snippets
-- [/connect](https://motion-menu-two.vercel.app/connect) — this content, for humans
 - [/catalogue](https://motion-menu-two.vercel.app/catalogue) — browse the library
 - [/docs](https://motion-menu-two.vercel.app/docs) — quickstart and the full HTTP surface reference
 
-## This repo
+---
 
-Contents are limited to `server.json` and this README — nothing else. No pattern source, no
-compiled library modules, no internal documentation. Kept in sync by hand when `server.json`
-changes on `main` of the private product repository.
+This repository is the server's public metadata (`server.json`, registry id
+`io.github.dev55acc-ai/motion-menu`) and install docs. The pattern library is commercial and
+lives at [motion-menu-two.vercel.app](https://motion-menu-two.vercel.app) — see
+[LICENSE](./LICENSE).

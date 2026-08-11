@@ -26,16 +26,6 @@ This writes a `streamableHttp` entry to Cline's MCP settings:
 
 No further configuration is needed to use the free tier.
 
-Two things were separately verified 2026-08-10, not conflated:
-
-- **The install command itself**, in a fresh isolated Cline CLI profile
-  (`cline --config <empty dir> --data-dir <empty dir> mcp install …`): it returns
-  `{"status":"installed","warnings":[]}` and writes exactly the `streamableHttp` config block
-  above. `cline mcp install` writes local config only — it does not itself call the server.
-- **The endpoint**, with a direct JSON-RPC 2.0 handshake over curl (not through Cline):
-  `initialize` succeeds, `tools/list` returns 11 tools, and a `tools/call` against the free
-  `list_patterns` tool returns pattern rows — all with no key.
-
 ## Add a paid key (optional)
 
 To unlock the rest of the 596-pattern catalogue ($149 once, lifetime — see
