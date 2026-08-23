@@ -1,11 +1,11 @@
 # Motion Menu — MCP server
 
-596 motion/3D UI patterns — scroll-driven WebGL, shader passes, spring choreography — as
+597 motion/3D UI patterns — scroll-driven WebGL, shader passes, spring choreography — as
 transplantable HTML/CSS/JS an agent reads directly and drops into a page. Filed into 26
 collections by page role. Served over MCP, plain HTTP, and a shadcn registry.
 
 - **Free**: 26 patterns, no card, no expiry.
-- **Lifetime**: $149 once — all 596 patterns, all themes, compose, publish, yours forever.
+- **Lifetime**: $149 once — all 597 patterns, every framework wrapper, yours forever.
   No subscriptions, no seats, no renewal.
 
 ## MCP endpoint
