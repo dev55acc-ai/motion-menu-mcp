@@ -11,7 +11,7 @@ collections by page role. Served over MCP, plain HTTP, and a shadcn registry.
 ## MCP endpoint
 
 ```
-https://motion-menu-two.vercel.app/api/mcp
+https://www.motionmenu.ca/api/mcp
 ```
 
 JSON-RPC 2.0, streamable-http, single POST. `initialize` returns teaching instructions; no key
@@ -22,7 +22,7 @@ needed to initialize, list tools, or call the free ones.
 Claude Code:
 
 ```
-claude mcp add --transport http motion-menu https://motion-menu-two.vercel.app/api/mcp \
+claude mcp add --transport http motion-menu https://www.motionmenu.ca/api/mcp \
   --header "Authorization: Bearer ${MOTION_MENU_KEY}"
 ```
 
@@ -32,7 +32,7 @@ Cursor / Windsurf (`mcp.json`):
 {
   "mcpServers": {
     "motion-menu": {
-      "url": "https://motion-menu-two.vercel.app/api/mcp",
+      "url": "https://www.motionmenu.ca/api/mcp",
       "headers": { "Authorization": "Bearer ${MOTION_MENU_KEY}" }
     }
   }
@@ -44,14 +44,14 @@ Cline: see [llms-install.md](./llms-install.md).
 Plain HTTP, no MCP client needed:
 
 ```
-curl -H "Authorization: Bearer mm_live_..." https://motion-menu-two.vercel.app/p/150.json
-curl https://motion-menu-two.vercel.app/kit.md   # public index + rules, no key
+curl -H "Authorization: Bearer mm_live_..." https://www.motionmenu.ca/p/150.json
+curl https://www.motionmenu.ca/kit.md   # public index + rules, no key
 ```
 
 shadcn registry:
 
 ```
-npx shadcn@latest add "https://motion-menu-two.vercel.app/r/<slug>.json?framework=react"
+npx shadcn@latest add "https://www.motionmenu.ca/r/<slug>.json?framework=react"
 ```
 
 Claude Code plugin (optional — same endpoint, plus a skill teaching the workflow):
@@ -72,13 +72,13 @@ nothing regardless of pattern count.
 
 ## Links
 
-- [/store](https://motion-menu-two.vercel.app/store) — get a key, pricing, integration snippets
-- [/catalogue](https://motion-menu-two.vercel.app/catalogue) — browse the library
-- [/docs](https://motion-menu-two.vercel.app/docs) — quickstart and the full HTTP surface reference
+- [/store](https://www.motionmenu.ca/store) — get a key, pricing, integration snippets
+- [/catalogue](https://www.motionmenu.ca/catalogue) — browse the library
+- [/docs](https://www.motionmenu.ca/docs) — quickstart and the full HTTP surface reference
 
 ---
 
 This repository is the server's public metadata (`server.json`, registry id
 `io.github.dev55acc-ai/motion-menu`) and install docs. The pattern library is commercial and
-lives at [motion-menu-two.vercel.app](https://motion-menu-two.vercel.app) — see
+lives at [www.motionmenu.ca](https://www.motionmenu.ca) — see
 [LICENSE](./LICENSE).

@@ -3,12 +3,12 @@
   "name": "io.github.dev55acc-ai/motion-menu",
   "title": "Motion Menu",
   "description": "596 motion/3D UI patterns as ready HTML/CSS/JS, served over MCP. Free tier + $149 lifetime.",
-  "websiteUrl": "https://motion-menu-two.vercel.app",
-  "version": "14.0.0",
+  "websiteUrl": "https://www.motionmenu.ca",
+  "version": "15.0.0",
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://motion-menu-two.vercel.app/api/mcp"
+      "url": "https://www.motionmenu.ca/api/mcp"
     }
   ]
 }

@@ -6,7 +6,7 @@ Remote server, streamable-http, no API key required for the free tier (26 of 596
 ## Install
 
 ```
-cline mcp install motion-menu https://motion-menu-two.vercel.app/api/mcp --transport streamable-http --yes
+cline mcp install motion-menu https://www.motionmenu.ca/api/mcp --transport streamable-http --yes
 ```
 
 This writes a `streamableHttp` entry to Cline's MCP settings:
@@ -17,7 +17,7 @@ This writes a `streamableHttp` entry to Cline's MCP settings:
     "motion-menu": {
       "transport": {
         "type": "streamableHttp",
-        "url": "https://motion-menu-two.vercel.app/api/mcp"
+        "url": "https://www.motionmenu.ca/api/mcp"
       }
     }
   }
@@ -29,7 +29,7 @@ No further configuration is needed to use the free tier.
 ## Add a paid key (optional)
 
 To unlock the rest of the 596-pattern catalogue ($149 once, lifetime — see
-[/store](https://motion-menu-two.vercel.app/store)), edit the entry above to add a header:
+[/store](https://www.motionmenu.ca/store)), edit the entry above to add a header:
 
 ```json
 {
@@ -37,7 +37,7 @@ To unlock the rest of the 596-pattern catalogue ($149 once, lifetime — see
     "motion-menu": {
       "transport": {
         "type": "streamableHttp",
-        "url": "https://motion-menu-two.vercel.app/api/mcp",
+        "url": "https://www.motionmenu.ca/api/mcp",
         "headers": { "Authorization": "Bearer mm_live_..." }
       }
     }
