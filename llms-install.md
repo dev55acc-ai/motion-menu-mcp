@@ -24,12 +24,12 @@ This writes a `streamableHttp` entry to Cline's MCP settings:
 }
 ```
 
-No further configuration is needed to use the free tier.
+That's it — the whole 597-pattern catalogue is free, no key, no card.
 
-## Add a paid key (optional)
+## Add a key (optional, metering only)
 
-To unlock the rest of the 597-pattern catalogue ($149 once, lifetime — see
-[/store](https://www.motionmenu.ca/store)), edit the entry above to add a header:
+A key only meters your own usage on your account — see
+[/store](https://www.motionmenu.ca/store). Edit the entry above to add a header:
 
 ```json
 {

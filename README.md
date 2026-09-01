@@ -4,9 +4,10 @@
 transplantable HTML/CSS/JS an agent reads directly and drops into a page. Filed into 26
 collections by page role. Served over MCP, plain HTTP, and a shadcn registry.
 
-- **Free**: 26 patterns, no card, no expiry.
-- **Lifetime**: $149 once — all 597 patterns, every framework wrapper, yours forever.
-  No subscriptions, no seats, no renewal.
+- **Free**: the entire library — all 597 patterns, every framework wrapper.
+  No card, no key, no tiers. Motion Menu funds itself by building with these
+  patterns ([Plinth](https://www.motionmenu.ca/store): fixed-scope sites, fixed
+  price, fixed date).
 
 ## MCP endpoint
 
